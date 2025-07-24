@@ -3,7 +3,7 @@ import streamlit.components.v1 as components
 import contextlib
 import io
 
-st.set_page_config(page_title="🔥 힙한 Python IDE", layout="wide")
+st.set_page_config(page_title="🔥 Python IDE", layout="wide")
 
 st.markdown("""
     <style>
@@ -15,7 +15,7 @@ st.markdown("""
     }
     </style>
 
-    <h1 style='text-align:center; color:#00ffd5;'>🔥 힙한 Python IDE</h1>
+    <h1 style='text-align:center; color:#00ffd5;'>🔥 Python IDE</h1>
     <p style='text-align:center; color:#888;'>Streamlit + 힙한 다크 테마 코드 에디터</p>
 """, unsafe_allow_html=True)
 
