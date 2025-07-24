@@ -6,7 +6,7 @@ import io
 st.set_page_config(page_title="🧠 파이썬 IDE", layout="wide")
 
 st.markdown("""
-    <h1 style="text-align:center; color:#00ffd5;">🧠 힙한 파이썬 IDE</h1>
+    <h1 style="text-align:center; color:#00ffd5;">🧠 파이썬 IDE</h1>
     <p style="text-align:center; color:#aaa;">줄 번호 + 자동 들여쓰기 포함</p>
 """, unsafe_allow_html=True)
 
