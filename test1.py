@@ -4,8 +4,6 @@ import random
 
 # 관상 예측 (모의)
 def predict_face_reading(image):
-    # 이 함수는 실제 모델이 들어갈 자리입니다.
-    # 아래는 예시 결과입니다.
     face_shapes = ['계란형', '둥근형', '각진형', '긴형']
     eye_types = ['맑고 또렷한 눈', '부드러운 눈매', '예리한 눈빛']
     mouth_types = ['입꼬리가 올라감', '입꼬리가 내려감', '평평한 입모양']
@@ -29,7 +27,7 @@ uploaded_file = st.file_uploader("얼굴 사진을 업로드하세요", type=["j
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption="업로드한 사진", use_column_width=True)
+    st.image(image, caption="업로드한 사진", use_container_width=True)  # ← 여기 수정됨
 
     if st.button("관상 예측하기"):
         with st.spinner("관상 분석 중..."):
@@ -45,4 +43,3 @@ if uploaded_file is not None:
 
 else:
     st.warning("먼저 얼굴 사진을 업로드해주세요.")
-
